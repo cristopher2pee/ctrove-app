@@ -1,0 +1,5 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-select-field nz-col [nzSpan]="24" [control]="form.controls['phaseId']" [text]="fields.phase" [options]="phases" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-date-range-picker-field nz-col [nzSpan]="24" [text]="fields.dates" [control]="form.controls['date']"/>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [statusControl]="form.controls['status']" [isAdd]="isAdd" [remarksControl]="form.controls['remarks']" [isTouched]="form.touched" [isLoading]="isLoading" (submit)="submit($event)" [id]="form.value.id"/>
+</form>

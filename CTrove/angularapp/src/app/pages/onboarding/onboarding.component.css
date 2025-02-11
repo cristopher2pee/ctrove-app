@@ -1,0 +1,39 @@
+nz-layout {
+    height: 100%;
+}
+
+app-def-button {
+    float: right;
+}
+
+form {
+    width: 700px;
+}
+
+.sider {
+    /* background-color: var(--default); */
+}
+
+.description {
+    margin-top: 10px;
+    color: gray;
+}
+
+.sider-container {
+    background: url("../../../assets/images/common/image_portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: inherit;
+    padding: 0px 20px 0px 20px;
+}
+
+.content {
+    background-color: white;
+    padding: 100px;
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+}

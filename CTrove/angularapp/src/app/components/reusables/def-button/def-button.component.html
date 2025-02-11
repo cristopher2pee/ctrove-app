@@ -1,0 +1,12 @@
+<button nz-button 
+    [style]="shape === 'circle' ? 'width: 100%' : 'min-width: 100%'"
+    [nzType]="type"
+    [nzSize]="size"
+    [nzShape]="shape"
+    [nzLoading]="isLoading"
+    [disabled]="isDisabled"
+    [nzDanger]="isDanger"
+    [nzBlock]="isBlock">
+    <span *ngIf="icon" nz-icon [nzType]="icon"></span>
+    <span *ngIf="text">{{ text }}</span>
+</button>

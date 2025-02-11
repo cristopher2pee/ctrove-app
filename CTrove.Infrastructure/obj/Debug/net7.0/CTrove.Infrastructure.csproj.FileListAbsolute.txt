@@ -1,0 +1,17 @@
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Infrastructure.deps.json
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Infrastructure.runtimeconfig.json
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Infrastructure.dll
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Infrastructure.pdb
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Core.dll
+D:\Gemango Projects\CTrove.Infrastructure\bin\Debug\net7.0\CTrove.Core.pdb
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.csproj.AssemblyReference.cache
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.AssemblyInfoInputs.cache
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.AssemblyInfo.cs
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.csproj.CopyComplete
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.dll
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\refint\CTrove.Infrastructure.dll
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.pdb
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\CTrove.Infrastructure.genruntimeconfig.cache
+D:\Gemango Projects\CTrove.Infrastructure\obj\Debug\net7.0\ref\CTrove.Infrastructure.dll

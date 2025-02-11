@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+    gap: 15px;
+    padding: 0px 20px 0px 20px;
+}
+.controls-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-flow: row;
+    gap: 15px;
+}

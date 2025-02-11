@@ -1,0 +1,9 @@
+<span nz-typography
+    [nzType]="type"
+    [style.font-size]="h === 1 ? '2em' : h === 2 ? '1.5em' : h === 3 ? '1.17em' : h === 4 ? '1em' : h === 5 ? '.83em' : h === 6 ? '.67em' : 'inherit'"
+    [style.font-family]="fontType === 'light' ? 'Futura-Light' :
+        fontType === 'medium' ? 'Futura-Medium' :
+        fontType === 'bold' ? 'Futura-Bold' :
+        'Futura-Book'">
+    <ng-content/>
+</span>

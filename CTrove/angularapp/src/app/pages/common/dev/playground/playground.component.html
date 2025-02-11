@@ -1,0 +1,39 @@
+<div class="container main">
+    <div class="controls-container">
+        <app-def-button [text]="text"/>
+        <app-def-button [text]="text" type="default"/>
+        <app-def-button [text]="text" type="dashed"/>
+        <app-def-button [text]="text" type="text"/>
+        <app-def-button [text]="text" type="link"/>
+    
+        <app-def-button text="Small" size="small"/>
+        <app-def-button text="Default" size="default"/>
+        <app-def-button text="Large" size="large"/>
+        <app-def-button icon="heart"/>
+        <app-def-button icon="heart" shape="circle"/>
+        <app-def-button icon="heart" shape="round"/>
+        <app-def-button icon="heart" shape="round" [text]="text"/>
+        <app-def-button icon="heart" [text]="text"/>
+    </div>
+    <div class="controls-container">
+        <app-def-button [text]="text" [isLoading]="true"/>
+        <app-def-button [text]="text" type="text" [isLoading]="true"/>
+        <app-def-button [isLoading]="true" shape="circle"/>
+        <app-def-button [isLoading]="true" type="default" shape="circle"/>
+        <app-def-button [text]="text" type="primary" [isDanger]="true"/>
+        <app-def-button [text]="text" type="default" [isDanger]="true"/>
+        <app-def-button [text]="text" type="text" [isDanger]="true"/>
+        <app-def-button [text]="text" type="link" [isDanger]="true"/>
+        <app-def-button [text]="text" type="default" [isDisabled]="true"/>
+    </div>
+    <div class="controls-container">
+        <app-def-input [text]="text" [placeholder]="text"/>
+        <app-def-input text="Disabled Input" [isDisabled]="true"/>
+        <app-def-input text="Small" size="small"/>
+        <app-def-input text="Default" size="default"/>
+        <app-def-input text="Large" size="large"/>
+        <app-def-input text="Warning" status="warning"/>
+        <app-def-input text="Error" status="error"/>
+
+    </div>
+</div>

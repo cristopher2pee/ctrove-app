@@ -1,0 +1,8 @@
+nz-select {
+    width: 100%;
+    /* background-color: var(--accent);  */
+    border: 1px solid var(--accent);
+    /* border-radius: 20px;  */
+    color: var(--accent);
+    padding: 0px 10px;
+}

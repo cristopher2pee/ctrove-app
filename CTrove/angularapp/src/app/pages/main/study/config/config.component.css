@@ -1,0 +1,14 @@
+div {
+    display: flex; 
+    gap: 10px; 
+    flex-flow: column;
+}
+
+.audit-btn-container {
+    align-items: end;
+}
+
+.audit-btn-container > app-def-button {
+    width: 33px; 
+    height: 33px;
+}

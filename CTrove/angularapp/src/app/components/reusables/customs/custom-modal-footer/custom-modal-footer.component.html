@@ -1,0 +1,8 @@
+<div nz-row [nzGutter]="[8, 0]" nzAlign="bottom">
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-custom-input-field nz-col [nzSpan]="isAdd ? 12 : 8" [text]="fields.remarks" [control]="remarksControl"/>
+    <app-custom-select-status *ngIf="!isAdd" nz-col [nzSpan]="4" [control]="statusControl" (selectionChanged)="statusChanged.emit($event)"/>
+    <app-def-button *ngIf="!isAdd" nz-col [nzSpan]="1" type="default" shape="circle" icon="history" (click)="openAudit()"/>
+    <app-def-button nz-col [nzSpan]="4" [nzOffset]="isAdd ? 4 : 3" type="default" text="Cancel" (click)="submit.emit(false)"/>
+    <app-def-button nz-col [nzSpan]="4" text="Save" [isDisabled]="!isTouched" [isLoading]="isLoading" (click)="submit.emit(true)"/>
+</div>

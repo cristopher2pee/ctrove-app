@@ -1,0 +1,18 @@
+<div class="main-container" nzPlacement="bottomRight">
+    <div *ngIf="user" class="info-container" style="gap: 5px; align-items: end;">
+        <app-def-text [h]="4" fontType="bold">{{ commonService.formatName(user) }}</app-def-text>
+        <app-custom-sites-switcher [sites]="sites"/>
+    </div>
+    <app-def-avatar nz-dropdown [nzDropdownMenu]="menu"/>
+</div>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu (click)="$event.stopPropagation()">
+        <li nz-menu-item (click)="profile(
+
+        )">My Profile</li>
+        <li nz-menu-item [nzDisabled]="true">Settings</li>
+        <li nz-menu-item (click)="logout()">
+            Logout
+        </li>
+    </ul>
+</nz-dropdown-menu>

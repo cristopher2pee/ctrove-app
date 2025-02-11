@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CTrove.Core\CTrove.Core.csproj" />
+    <ProjectReference Include="..\CTrove.Infrastructure\CTrove.Infrastructure.csproj" />
+    <ProjectReference Include="..\CTrove\Ctrove.HR\Ctrove.HR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TimeZoneConverter" Version="6.1.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+D:\Gemango Projects\CTrove.Core\bin\Debug\net7.0\CTrove.Core.deps.json
+D:\Gemango Projects\CTrove.Core\bin\Debug\net7.0\CTrove.Core.dll
+D:\Gemango Projects\CTrove.Core\bin\Debug\net7.0\CTrove.Core.pdb
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.csproj.AssemblyReference.cache
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.AssemblyInfoInputs.cache
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.AssemblyInfo.cs
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.csproj.CoreCompileInputs.cache
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.dll
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\refint\CTrove.Core.dll
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\CTrove.Core.pdb
+D:\Gemango Projects\CTrove.Core\obj\Debug\net7.0\ref\CTrove.Core.dll

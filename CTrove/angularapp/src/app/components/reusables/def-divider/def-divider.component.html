@@ -1,0 +1,10 @@
+<nz-divider 
+    [nzType]="type" 
+    [nzText]="text ? t : ''" 
+    [nzOrientation]="orientation" 
+    [nzPlain]="isPlain">
+    <ng-template #t>
+        <span nz-icon [nzType]="icon"></span>
+        {{ text }}
+    </ng-template>
+</nz-divider>

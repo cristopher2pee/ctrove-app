@@ -1,0 +1,35 @@
+<nz-layout class="main">
+  <nz-sider nzWidth="200px" nzTheme="light">
+    <div class="logo-container">
+      <app-def-image source="../../../assets/images/banners/banner.png"/>
+    </div>
+    <ul nz-menu nzMode="inline" class="sider-menu">
+        <li nz-submenu class="medium" *ngFor="let item of menu" nzOpen [nzIcon]="item.icon" [nzTitle]="item.name">
+            <ul>
+              <li nz-menu-item class="book" *ngFor="let subItem of item.subMenu" [routerLink]="subItem.path" [nzSelected]="subItem.name === currentPath">{{ subItem.name }}</li>
+            </ul>
+        </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header nz-row [nzGutter]="20" nzAlign="middle">
+      <nz-breadcrumb nz-col nzFlex="auto" [nzSeparator]="iconTemplate">
+        <nz-breadcrumb-item *ngFor="let route of routes">
+            <a [routerLink]="route !== currentPath ? [route.toLowerCase()] : null" [ngClass]="route === currentPath ? 'bold' : 'medium'">{{ route }}</a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item *ngFor="let route of subRoutes">
+            <a class="mediun">{{ route }}</a>
+        </nz-breadcrumb-item>
+      </nz-breadcrumb>
+      <ng-template #iconTemplate>
+        <app-def-icon icon="right"/>
+      </ng-template>
+      <app-def-user-profile nz-col [user]="currentUser" [sites]="sites"/>
+    </nz-header>
+    <nz-layout class="inner-layout">
+      <nz-content>
+          <router-outlet/>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

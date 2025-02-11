@@ -1,0 +1,9 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-select-field nz-col [nzSpan]="24" [text]="fields.user" [control]="form.controls['userId']" [options]="users" [isDisabled]="!users" (selectionChanged)="getCountries()"/>
+    <app-custom-select-field nz-col [nzSpan]="24" [text]="fields.studyCountry" [control]="form.controls['countryId']" [options]="countries" [isDisabled]="!form.controls['userId'].value" (selectionChanged)="getSites($event)"/>
+    <app-custom-select-field nz-col [nzSpan]="24" [text]="fields.studySites" [control]="form.controls['siteId']" [options]="sites" [isDisabled]="!form.controls['countryId'].value"/>
+    <app-def-checkbox nz-col [nzSpan]="4" [nzOffset]="12" [control]="form.controls['read']" [isDisabled]="true">{{ fields.read }}</app-def-checkbox>
+    <app-def-checkbox nz-col [nzSpan]="4" [control]="form.controls['write']">{{ fields.write }}</app-def-checkbox>
+    <app-def-checkbox nz-col [nzSpan]="4" [control]="form.controls['bin']">{{ fields.bin }}</app-def-checkbox>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [isTouched]="form.touched" [isAdd]="isAdd" [statusControl]="form.controls['status']" [remarksControl]="form.controls['remarks']" (submit)="submit($event)" [id]="form.value.id"/>
+</form>

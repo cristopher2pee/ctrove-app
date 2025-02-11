@@ -1,0 +1,31 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <div nz-col [nzSpan]="24">
+        <nz-tag *ngFor="let p of sitePhases" nzColor="orange" (click)="manage(false, p)">
+            {{ p.phase.name }}
+        </nz-tag>
+
+        <button nz-button nzType="dashed" nzSize="small" (click)="manage(true)">
+            <span nz-icon nzType="plus-circle"></span>
+            {{ fields.addPhase }}
+        </button>
+    </div>
+    <nz-tabset nz-col [nzSpan]="24" nzSize="small" nzCentered>
+        <nz-tab nzTitle="Details">
+            <div nz-row [nzGutter]="defGutter">
+                <app-custom-input-field nz-col [nzSpan]="12" [control]="form.controls['code']" [text]="fields.code"/>
+                <app-custom-input-field nz-col [nzSpan]="12" [control]="form.controls['name']" [text]="fields.name"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['studyCountryId']" [options]="studyCountries" [text]="fields.studyCountry" (selectionChanged)="form.markAsTouched()"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['serviceTypeId']" [options]="serviceTypes" [text]="fields.serviceType" (selectionChanged)="form.markAsTouched()"/>
+                <app-custom-date-range-picker-field nz-col [nzSpan]="12" [text]="fields.dates" [control]="form.controls['date']"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['siteStatus']" [options]="siteStatuses" [text]="fields.siteStatus" (selectionChanged)="form.markAsTouched()"/>
+                <app-custom-modal-footer nz-col [nzSpan]="24" [statusControl]="form.controls['status']" [isAdd]="isAdd" [remarksControl]="form.controls['remarks']" [isTouched]="form.touched" [isLoading]="isLoading" (submit)="submit($event)" [id]="form.value.id"/>
+            </div>
+        </nz-tab>
+        <nz-tab nzTitle="Contributors">
+            <div nz-row [nzGutter]="defGutter">
+                <app-def-input-group nz-col [nzSpan]="24" icon="search" [control]="cForm.controls['search']" [placeholder]="fields.search"/>
+                <app-def-list nz-col [nzSpan]="24" [items]="[ { id: 1, name: 'Test' }, { id: 2, name: 'Test 2' } ]" (itemClicked)="onItemClicked($event)" [buttonText]="fields.add"/>
+            </div>
+        </nz-tab>
+      </nz-tabset>
+</form>

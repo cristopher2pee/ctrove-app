@@ -1,0 +1,9 @@
+li {
+    cursor: pointer;
+    display: flex;
+    
+}
+
+li:hover {
+    background-color: var(--default-hover);
+}

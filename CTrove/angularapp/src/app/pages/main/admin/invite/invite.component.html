@@ -1,0 +1,8 @@
+<!-- <app-def-on-dev title="Invite"/> -->
+<app-def-card>
+    <form nz-row [nzGutter]="defGutter" [formGroup]="form" (submit)="submit()">
+        <app-custom-input-field nz-col [nzSpan]="24" text="Email" [control]="form.controls['email']"/>
+        <app-custom-select-field nz-col [nzSpan]="24" text="Roles" [options]="rolesOptions" [control]="form.controls['rolesId']"/>
+        <app-def-button nz-col class="def-margin-top" [nzSpan]="9" [nzOffset]="15" [isLoading]="isLoading" text="Invite"/>
+    </form>
+</app-def-card >

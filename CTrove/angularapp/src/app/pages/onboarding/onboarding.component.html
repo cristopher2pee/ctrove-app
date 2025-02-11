@@ -1,0 +1,28 @@
+<nz-layout>
+  <nz-sider class="sider" style="min-width: 20%;">
+    <div class="sider-container">
+    </div>
+  </nz-sider>
+  <nz-layout>
+    <nz-content class="content">
+      <form nz-row [nzGutter]="defGutter" [formGroup]="form" (submit)="submit()">
+        <app-def-image nz-col nzFlex="150px" source="../../../assets/images/banners/banner.png"/>
+        <app-def-text nz-col [nzSpan]="24" class="description">Unlocking Possibilities, Accelerating Discoveries: CTrove Clinical Trial Management System.</app-def-text>
+        <app-def-divider nz-col [nzSpan]="24" [text]="fields.headerPersonal"/>
+        <app-custom-input-field nz-col [nzSpan]="4" [text]="fields.prefix.name" [control]="form.controls['prefix']" [max]="fields.prefix.maxLength"/>
+        <app-custom-input-field nz-col [nzSpan]="10" [text]="fields.firstName.name" [control]="form.controls['firstname']" [max]="fields.firstName.maxLength"/>
+        <app-custom-input-field nz-col [nzSpan]="10" [text]="fields.middleName.name" [control]="form.controls['middlename']" [max]="fields.middleName.maxLength"/>
+        <app-custom-input-field nz-col [nzSpan]="10" [text]="fields.lastName.name" [control]="form.controls['lastname']" [max]="fields.lastName.maxLength"/>
+        <app-custom-input-field nz-col [nzSpan]="4" [text]="fields.suffix.name" [control]="form.controls['suffix']" [max]="fields.suffix.maxLength"/>
+        <app-custom-select-field nz-col [nzSpan]="10" [text]="fields.location" [options]="timezones" [control]="form.controls['location']"/>
+        <app-def-divider class="def-margin-top" nz-col [nzSpan]="24" [text]="fields.headerContact"/>
+        <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.email" [control]="form.controls['email']" type="email" [isDisabled]="true"/>
+        <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.organization.name" [control]="form.controls['organization']" [max]="fields.organization.maxLength"/>
+        <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.mobileNumber.name" [control]="form.controls['mobile']" [mask]="fields.mobileNumber.mask"/>
+        <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.landline.name" [control]="form.controls['landline']" [mask]="fields.landline.mask"/>
+        <app-def-checkbox nz-col [nzSpan]="12" class="def-margin-top" style="margin-top: 20px;">I agree to all the Terms and Privacy Policy</app-def-checkbox>
+        <app-def-button nz-col [nzOffset]="4" [nzSpan]="8" class="def-margin-top" [isLoading]="isLoading" [text]="fields.proceed"/> 
+      </form>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

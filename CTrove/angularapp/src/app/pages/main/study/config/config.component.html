@@ -1,0 +1,45 @@
+<div nz-row [nzGutter]="defGutter">
+    <app-def-card nz-col [nzSpan]="24" id="details">
+        <form nz-row [formGroup]="form" [nzGutter]="defGutter">
+            <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.code" [control]="form.controls['code']"/> 
+            <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.name" [control]="form.controls['name']"/>
+            <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.sponsor" [control]="form.controls['sponsor']"/>
+            <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.billingCode" [control]="form.controls['billingCode']"/>
+            <app-custom-select-field nz-col [nzSpan]="8" [text]="fields.studyType" [control]="form.controls['studyType']" [options]="studyTypes" (selectionChanged)="form.markAsTouched()"/>
+            <app-custom-select-field nz-col [nzSpan]="8" [text]="fields.trialClassification" [control]="form.controls['classificationId']" [options]="trialClassifications" [hasButton]="true" (onButtonClick)="scrollTo(1, 'trial_classification')" (selectionChanged)="form.markAsTouched()"/>
+            <app-custom-select-field nz-col [nzSpan]="8" [nzOffset]="0" [text]="fields.therapeuticArea" [control]="form.controls['therapeuticAreaId']" [options]="therapeuticAreas" [hasButton]="true" (onButtonClick)="scrollTo(2, 'therapeutic_area')" (selectionChanged)="form.markAsTouched()"/>
+            <div nz-col [nzSpan]="1" [nzOffset]="17" class="audit-btn-container">
+                <app-def-button *ngIf="currentStudy" type="default" shape="circle" icon="history" (click)="showAudit()"/>
+            </div>
+            <app-def-input nz-col [nzSpan]="4" [isDisabled]="!form.touched" [placeholder]="fields.remarks" [control]="form.controls['remarks']"/> 
+            <app-def-button nz-col [nzSpan]="2" [text]="fields.save" [isDisabled]="!form.touched" [isLoading]="isLoading" (click)="onSubmit()"/>
+        </form>
+    </app-def-card>
+    
+    <nz-collapse nzAccordion>
+        <nz-collapse-panel [nzHeader]="tables[0]" [(nzActive)]="showTherapeutic">
+            <app-therapeutic-area id="therapeutic_area" #therapeuticAreaTable (dataLoaded)="therapeuticAreas=$event"/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[1]" [(nzActive)]="showClassification">
+            <app-trial-classification id="trial_classification" #trialClassificationTable (dataLoaded)="trialClassifications=$event"/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[2]">
+            <app-study-country/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[3]">
+            <app-service-type/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[4]">
+            <app-phase/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[5]">
+            <app-visit/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[6]">
+            <app-ethnicity/>
+        </nz-collapse-panel>
+        <nz-collapse-panel [nzHeader]="tables[7]">
+            <app-race/>
+        </nz-collapse-panel>
+    </nz-collapse>
+</div>

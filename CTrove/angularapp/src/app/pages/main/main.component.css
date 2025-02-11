@@ -1,0 +1,22 @@
+nz-header {
+    background-color: transparent; 
+    margin: 10px 0px 0px 0px;
+}
+
+nz-content {
+    padding: 24px;
+    min-height: 280px;
+    background-color: white;
+}
+
+.main {
+    min-height: 100vh !important;
+}
+
+.sider-menu {
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 24px 24px;
+}

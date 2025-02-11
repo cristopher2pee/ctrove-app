@@ -1,0 +1,19 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-def-input-group nz-col [nzSpan]="18" icon="search" [control]="form.controls['search']" [placeholder]="fields.search"/>
+    <app-custom-select-status nz-col [nzSpan]="4" [control]="form.controls['status']" [placeholder]="fields.country"/>
+    <app-def-button nz-col [nzSpan]="2" icon="plus" [text]="fields.add" [isDisabled]="!hasAccess" [isLoading]="isLoadingAccess" (click)="manage(true)"/>
+    <app-def-select nz-col [nzSpan]="6" [control]="form.controls['studyCountryIds']" [options]="countries" [placeholder]="fields.country" mode="tags"/>
+    <app-def-select nz-col [nzSpan]="6" [control]="form.controls['sitesIds']" [options]="sites" [placeholder]="fields.site" mode="tags"/>
+    <app-def-select nz-col [nzSpan]="6" [control]="form.controls['subjectStatus']" [options]="countries" [placeholder]="fields.visit" [isDisabled]="true" mode="tags"/>
+    <app-def-select nz-col [nzSpan]="6" [control]="form.controls['subjectStatus']" [options]="subjectStatuses" [placeholder]="fields.subjectStatus" mode="tags"/>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-def-table nz-col [nzSpan]="24" 
+        [headers]="headers" 
+        [dataSet]="data"
+        [isLoading]="isLoading"
+        [total]="meta.total"
+        [size]="meta.limit"
+        [index]="meta.page" 
+        (changed)="tableChanged($event)"
+        (dataClicked)="manage(false, $event)"/>
+</form>

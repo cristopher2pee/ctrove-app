@@ -1,0 +1,71 @@
+<nz-layout class="main-container">
+    <nz-carousel nzAutoPlay>
+        <div nz-carousel-content *ngFor="let image of images">
+            <app-def-image [source]="image"/>
+        </div>
+    </nz-carousel>
+    <div nz-row class="main">
+        <nz-header nz-col nz-row> 
+            <app-def-button nz-col [nzSpan]="1" [nzOffset]="23" [text]="loginButton" icon="login" [isLoading]="isLoading" (click)="authenticate()"/>
+        </nz-header>
+        <div nz-col [nzSpan]="24">
+            <app-def-image source="../../../assets/images/banners/banner.png"/>  
+            <app-def-text class="detail" fontType="bold" [h]="1">Clinical Trial Management System</app-def-text>
+            <div>
+                <div class="header details">
+                    <app-def-text [h]="1" fontType="bold">New site monitoring</app-def-text>
+                    <app-def-text [h]="1" fontType="bold">Holistic approach</app-def-text>
+                    <app-def-text [h]="1" fontType="bold">Efficiency increase</app-def-text>
+                </div>
+
+                <div class="detail details" style="align-items: center;">
+                    <app-def-text [h]="1" fontType="bold">The New</app-def-text>
+                    <app-def-text fontType="bold" style="font-size: 50px;">Cra Experience</app-def-text>
+                </div>
+
+                <div class="header details" style="align-items: end;">
+                    <app-def-text [h]="1" fontType="bold">Data quality increase</app-def-text>
+                    <app-def-text [h]="1" fontType="bold">Target monitoring</app-def-text>
+                    <app-def-text [h]="1" fontType="bold">Cost reduction</app-def-text>
+                </div>
+            </div>
+        </div>
+    </div>
+</nz-layout>
+<nz-layout>
+    <nz-footer>
+        <div class="details">
+            <app-def-text [h]="2" fontType="bold" class="header">US Office</app-def-text>
+            <app-def-text [h]="3" fontType="medium" class="header" style="margin-top: 10px;">Chicago</app-def-text>
+            <app-def-text class="detail">10 South West Loop, Riverside Plaza</app-def-text>
+            <app-def-text class="detail">Suite 875, Chicago, Illinois, 60606</app-def-text>
+            <app-def-text class="detail">United States</app-def-text>
+            <app-def-text class="detail">Tel.: +1 312 474 6080</app-def-text>
+            <app-def-text class="detail">Fax: +1 312 474 6099</app-def-text>
+        </div>
+        <div class="details details-bordered">
+            <app-def-text [h]="2" fontType="bold" class="header">Europe office</app-def-text>
+            <app-def-text [h]="3" fontType="medium" class="header" style="margin-top: 10px;">Belgium (HQ)</app-def-text>
+            <app-def-text class="detail">Alfons Smetsplein 3H1</app-def-text>
+            <app-def-text class="detail">3000 Leuven</app-def-text>
+            <app-def-text class="detail">Belgium</app-def-text>
+            <app-def-text class="detail">Tel.: +32 (0) 16 58 12 84</app-def-text>
+            <app-def-text class="detail">Fax: +32 (0) 16 46 55 52</app-def-text>
+        </div>
+        <div class="details details-bordered">
+            <app-def-text [h]="2" fontType="bold" class="header">Asia offices</app-def-text>
+            <app-def-text [h]="3" fontType="medium" class="header" style="margin-top: 10px;">Singapore</app-def-text>
+            <app-def-text class="detail">8 Marina View, #43-01</app-def-text>
+            <app-def-text class="detail">Asia Square, Tower 1</app-def-text>
+            <app-def-text class="detail">Singapore, 018960</app-def-text>
+            <app-def-text class="detail">Tel.: +65 (0) 6407 1163</app-def-text>
+            <app-def-text class="detail">Fax: +65 (0) 6407 1001</app-def-text>
+        </div>
+        <div class="details">
+            <app-def-text [h]="3" fontType="medium" class="header" style="margin-top: 10px;">The Philippines</app-def-text>
+            <app-def-text class="detail">Cebu Ayala Business Park IT Tower 1</app-def-text>
+            <app-def-text class="detail">14B, Arch Reyes Str. & Bohol Ave.</app-def-text>
+            <app-def-text class="detail">6000 Cebu City, The Philippines</app-def-text>
+        </div>
+    </nz-footer>
+</nz-layout>

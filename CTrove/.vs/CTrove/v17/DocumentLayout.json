@@ -1,0 +1,356 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Gemango Projects\\CTrove\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\middleware\\ctroveauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\middleware\\ctroveauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\extensions\\serviceapiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\extensions\\serviceapiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\azure\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\azure\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\master\\ethnicitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\master\\ethnicitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\master\\therapeuticareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\master\\therapeuticareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\master\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\master\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D74D6E2-95A2-456B-94C7-A0DF63CF9F91}|..\\CTrove.Services\\CTrove.Services.csproj|d:\\gemango projects\\ctrove.services\\services\\countryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D74D6E2-95A2-456B-94C7-A0DF63CF9F91}|..\\CTrove.Services\\CTrove.Services.csproj|d:\\gemango projects\\ctrove.services\\services\\contributorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D74D6E2-95A2-456B-94C7-A0DF63CF9F91}|..\\CTrove.Services\\CTrove.Services.csproj|d:\\gemango projects\\ctrove.services\\services\\classificationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|d:\\gemango projects\\ctrove\\ctrove.hr\\services\\hrcontributorstudyservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|solutionrelative:ctrove.hr\\services\\hrcontributorstudyservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\hr\\contributorstudycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\hr\\contributorstudycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|d:\\gemango projects\\ctrove\\ctrove.hr\\services\\hrcontributorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|solutionrelative:ctrove.hr\\services\\hrcontributorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|d:\\gemango projects\\ctrove\\ctrove.hr\\services\\hrauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|solutionrelative:ctrove.hr\\services\\hrauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|d:\\gemango projects\\ctrove\\ctrove.hr\\services\\hrcountryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454A50E-095B-46C5-A9CB-BB09FD8EDF83}|Ctrove.HR\\Ctrove.HR.csproj|solutionrelative:ctrove.hr\\services\\hrcountryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\middleware\\customerrorhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\middleware\\customerrorhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\ctrove.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\ctrove.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\hr\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\hr\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|d:\\gemango projects\\ctrove\\webapi\\controllers\\audit\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F484506-F0A7-4CE8-8E74-4F0DB30CA23C}|webapi\\CTrove.Api.csproj|solutionrelative:webapi\\controllers\\audit\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Azure\\AuthService.cs",
+              "RelativeDocumentMoniker": "webapi\\Azure\\AuthService.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Azure\\AuthService.cs",
+              "RelativeToolTip": "webapi\\Azure\\AuthService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T14:34:52.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\RolesController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\Master\\RolesController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\RolesController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\Master\\RolesController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:43:04.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAIA0wEgAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:42:51.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CountryServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove.Services\\Services\\CountryServices.cs",
+              "RelativeDocumentMoniker": "..\\CTrove.Services\\Services\\CountryServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove.Services\\Services\\CountryServices.cs",
+              "RelativeToolTip": "..\\CTrove.Services\\Services\\CountryServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:49:44.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContributorServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove.Services\\Services\\ContributorServices.cs",
+              "RelativeDocumentMoniker": "..\\CTrove.Services\\Services\\ContributorServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove.Services\\Services\\ContributorServices.cs",
+              "RelativeToolTip": "..\\CTrove.Services\\Services\\ContributorServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:49:43.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClassificationServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove.Services\\Services\\ClassificationServices.cs",
+              "RelativeDocumentMoniker": "..\\CTrove.Services\\Services\\ClassificationServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove.Services\\Services\\ClassificationServices.cs",
+              "RelativeToolTip": "..\\CTrove.Services\\Services\\ClassificationServices.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:49:37.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContributorStudyController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\HR\\ContributorStudyController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\HR\\ContributorStudyController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\HR\\ContributorStudyController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\HR\\ContributorStudyController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:32:37.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceApiExtensions.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Extensions\\ServiceApiExtensions.cs",
+              "RelativeDocumentMoniker": "webapi\\Extensions\\ServiceApiExtensions.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Extensions\\ServiceApiExtensions.cs",
+              "RelativeToolTip": "webapi\\Extensions\\ServiceApiExtensions.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T01:28:29.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TherapeuticAreaController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\TherapeuticAreaController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\Master\\TherapeuticAreaController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\TherapeuticAreaController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\Master\\TherapeuticAreaController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:43:09.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HrAuthenticationServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrAuthenticationServices.cs",
+              "RelativeDocumentMoniker": "Ctrove.HR\\Services\\HrAuthenticationServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrAuthenticationServices.cs",
+              "RelativeToolTip": "Ctrove.HR\\Services\\HrAuthenticationServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:17:42.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HrContributorServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrContributorServices.cs",
+              "RelativeDocumentMoniker": "Ctrove.HR\\Services\\HrContributorServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrContributorServices.cs",
+              "RelativeToolTip": "Ctrove.HR\\Services\\HrContributorServices.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAQwMAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:17:30.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Program.cs",
+              "RelativeDocumentMoniker": "webapi\\Program.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Program.cs",
+              "RelativeToolTip": "webapi\\Program.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAwwGMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:16:48.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HrContributorStudyServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrContributorStudyServices.cs",
+              "RelativeDocumentMoniker": "Ctrove.HR\\Services\\HrContributorStudyServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrContributorStudyServices.cs",
+              "RelativeToolTip": "Ctrove.HR\\Services\\HrContributorStudyServices.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:12:09.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HrCountryServices.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrCountryServices.cs",
+              "RelativeDocumentMoniker": "Ctrove.HR\\Services\\HrCountryServices.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\Ctrove.HR\\Services\\HrCountryServices.cs",
+              "RelativeToolTip": "Ctrove.HR\\Services\\HrCountryServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T06:16:33.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CTrove.Api.csproj",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\CTrove.Api.csproj",
+              "RelativeDocumentMoniker": "webapi\\CTrove.Api.csproj",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\CTrove.Api.csproj",
+              "RelativeToolTip": "webapi\\CTrove.Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-14T03:51:46.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomErrorHandling.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Middleware\\CustomErrorHandling.cs",
+              "RelativeDocumentMoniker": "webapi\\Middleware\\CustomErrorHandling.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Middleware\\CustomErrorHandling.cs",
+              "RelativeToolTip": "webapi\\Middleware\\CustomErrorHandling.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T03:46:56.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EthnicityController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\EthnicityController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\Master\\EthnicityController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Master\\EthnicityController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\Master\\EthnicityController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:43:15.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrganizationController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\HR\\OrganizationController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\HR\\OrganizationController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\HR\\OrganizationController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\HR\\OrganizationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T03:35:01.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuditController.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Audit\\AuditController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\Audit\\AuditController.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Controllers\\Audit\\AuditController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\Audit\\AuditController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T03:34:57.248Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CtroveAuthorizationFilter.cs",
+              "DocumentMoniker": "D:\\Gemango Projects\\CTrove\\webapi\\Middleware\\CtroveAuthorizationFilter.cs",
+              "RelativeDocumentMoniker": "webapi\\Middleware\\CtroveAuthorizationFilter.cs",
+              "ToolTip": "D:\\Gemango Projects\\CTrove\\webapi\\Middleware\\CtroveAuthorizationFilter.cs",
+              "RelativeToolTip": "webapi\\Middleware\\CtroveAuthorizationFilter.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:43:27.011Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

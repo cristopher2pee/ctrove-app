@@ -1,0 +1,18 @@
+<form nz-row [nzGutter]="[15, 20]" nzAlign="middle" [formGroup]="form" (submit)="submit()">
+    <app-def-avatar nz-col [nzSpan]="2"/>
+    <!-- <div nz-col nz-row nzFlex="auto">
+        <app-def-text nz-col [nzSpan]="24" [h]="1" fontType="bold">{{ form.controls['firstname'].value }}</app-def-text>
+        <app-def-text nz-col [nzSpan]="24" [h]="2" fontType="medium">{{ form.controls['lastname'].value }}</app-def-text>
+    </div> -->
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-custom-input-field nz-col [nzSpan]="3" [text]="fields.prefix.name" [control]="form.controls['prefix']" [max]="fields.prefix.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.firstName.name" [control]="form.controls['firstname']" [max]="fields.firstName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.middleName.name" [control]="form.controls['middlename']" [max]="fields.middleName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.lastName.name" [control]="form.controls['lastname']" [max]="fields.lastName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="3" [text]="fields.suffix.name" [control]="form.controls['suffix']" [max]="fields.suffix.maxLength"  />
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.email" type="email" [control]="form.controls['email']" (blur)="onBlur(1, $event)"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.mobileNumber.name" [control]="form.controls['mobile']" [mask]="fields.mobileNumber.mask"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.landline.name" [control]="form.controls['landline']" [mask]="fields.landline.mask"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.organization.name" [control]="form.controls['organization']" [max]="fields.organization.maxLength"/>
+    <app-def-button nz-col [nzSpan]="3" [nzOffset]="21" [text]="fields.edit" [isLoading]="isLoading" [isDisabled]="!form.touched"/>
+</form>

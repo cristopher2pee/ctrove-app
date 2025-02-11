@@ -1,0 +1,20 @@
+<from nz-row [nzGutter]="defGutter"
+    [formGroup]="form">
+    <app-def-input-group nz-col [nzSpan]="6" icon="search" [control]="form.controls['search']" [placeholder]="fields.search"/>
+    <app-custom-select-status nz-col [nzSpan]="3" [control]="form.controls['status']" [placeholder]="fields.status"/>
+    <app-def-select nz-col [nzSpan]="3" [control]="form.controls['siteStatusId']" [options]="siteStatuses" [placeholder]="fields.siteStatus" mode="tags"/>
+    <app-def-select nz-col [nzSpan]="5" [control]="form.controls['serviceTypeId']" [options]="serviceTypes" [placeholder]="fields.serviceType" mode="tags"/>
+    <app-def-select nz-col [nzSpan]="5" [control]="form.controls['studyCountryId']" [options]="studyCountries" [placeholder]="fields.studyCountry" mode="tags"/>
+    <app-def-button nz-col [nzSpan]="2" icon="user-add" [text]="fields.add" (click)="manage(true)"/>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-def-table nz-col 
+        [nzSpan]="24" 
+        [headers]="headers" 
+        [dataSet]="data" 
+        [isLoading]="isLoading"
+        [total]="meta.total"
+        [size]="meta.limit"
+        [index]="meta.page" 
+        (changed)="tableChanged($event)"
+        (dataClicked)="manage(false, $event)"/>
+</from>

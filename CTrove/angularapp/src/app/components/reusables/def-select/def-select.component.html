@@ -1,0 +1,15 @@
+<nz-select nzAllowClear nzShowSearch
+    [nzMode]="mode" 
+    [nzMaxTagCount]="3" 
+    [nzPlaceHolder]="placeholder" 
+    [nzStatus]="control.invalid && (control.dirty || control.touched) ? 'error' : ''"
+    [ngModel]="control.value" 
+    [nzDisabled]="isDisabled"
+    [nzAllowClear]="allowClear"
+    [nzSize]="size"
+    [nzFilterOption]="nzFilterOption"
+    (ngModelChange)="changed($event)"
+    (nzOnSearch)="onSearched.emit($event)"
+    (nzFocus)="onFocused.emit($event)">
+    <nz-option *ngFor="let option of options" [nzValue]="option.id" [nzLabel]="option.name" [nzDisabled]="option.isDisabled"/>
+</nz-select>

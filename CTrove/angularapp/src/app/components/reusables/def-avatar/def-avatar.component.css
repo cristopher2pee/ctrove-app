@@ -1,0 +1,8 @@
+:host {
+    line-height: unset;
+}
+
+nz-avatar {
+    width: inherit;
+    height: inherit;
+}

@@ -1,0 +1,9 @@
+.header {
+    display: flex; 
+    margin-bottom: 5px; 
+    align-items: center;
+}
+
+.header > app-def-text {
+    flex-grow: 100;
+}

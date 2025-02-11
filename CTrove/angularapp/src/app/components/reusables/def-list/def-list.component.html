@@ -1,0 +1,10 @@
+<ul nz-list nz-col nzSize="small">
+    <li nz-list-item nzNoFlex *ngFor="let item of items">
+        <ul nz-list-item-actions>
+            <nz-list-item-action>
+                <a (click)="buttonClicked.emit($event)">{{ buttonText }}</a>
+            </nz-list-item-action>
+        </ul>
+        <app-def-text (click)="itemClicked.emit(item)" style="flex: ;">{{ item.name }}</app-def-text>
+    </li>
+</ul>

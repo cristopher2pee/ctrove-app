@@ -1,0 +1,64 @@
+* {
+    font-family: 'Futura-Book';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --default: #0071ff;
+    --primary: #F18136;
+    --accent: #FAA31F;
+    /* --primary: #1890ff; */
+    --theme-pink: #FF83A8;
+    --default-hover: rgba(0, 0, 0, 0.02);
+}
+
+@font-face {
+    font-family: "Futura-Light";
+    src: local("Futura"), url(./assets/fonts/futura/Futura-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura-Book";
+    src: local("Futura"), url(./assets/fonts/futura/Futura-Book.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura-Medium";
+    src: local("Futura"), url(./assets/fonts/futura/Futura-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Futura-Bold";
+    src: local("Futura"), url(./assets/fonts/futura/Futura-Bold.ttf) format("truetype");
+}
+
+.bold {
+    font-family: 'Futura-Bold';
+}
+
+.medium {
+    font-family: 'Futura-Medium';
+}
+
+.light {
+    font-family: 'Futura-Light';
+}
+
+.def-text-bold {
+    font-weight: 500;
+}
+
+.def-margin-top {
+    margin-top: 20px;
+}
+
+.error {
+    text-align: right;
+}
+
+.logo-container {
+    padding: 30px 30px 20px 30px;
+}

@@ -1,0 +1,39 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <div nz-col [nzSpan]="24">
+        <nz-tag *ngIf="siteCountry" nzColor="blue">
+            <span nz-icon nzType="flag"></span>
+            <span>{{ siteCountry.code }}</span>
+        </nz-tag>
+        <nz-tag *ngIf="userSite" nzColor="purple">
+            <span nz-icon nzType="check-circle"></span>
+            <span>{{ userSite.name }}</span>
+        </nz-tag>
+        <nz-tag *ngFor="let p of subjectPhases" nzColor="orange" (click)="manage(false, p)">
+            {{ p.phase.name }}
+        </nz-tag>
+
+        <button nz-button nzType="dashed" nzSize="small" (click)="manage(true)">
+            <span nz-icon nzType="plus-circle"></span>
+            {{ fields.addPhase }}
+        </button>
+    </div>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <nz-tabset nz-col [nzSpan]="24" nzSize="small" nzCentered>
+        <nz-tab nzTitle="Subject Info">
+            <div nz-row [nzGutter]="defGutter">
+                <app-custom-input-field nz-col [nzSpan]="12" [control]="form.controls['screeningNo']" [text]="fields.screenNo"/>
+                <app-custom-input-field nz-col [nzSpan]="12" [control]="form.controls['randNo']" [text]="fields.randomization"/>
+                <app-custom-date-picker nz-col [nzSpan]="6" [control]="form.controls['date']" [text]="fields.yearOfBirth"/>
+                <app-custom-input-field nz-col [nzSpan]="6" [control]="form.controls['age']" [text]="fields.age" [isDisabled]="true"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['sex']" [options]="genderOptions" [text]="fields.sex"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['ethnicityId']" [options]="ethnicityOptions" [text]="fields.ethnicity"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['raceId']" [options]="raceOptions" [text]="fields.race"/>
+                <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls['subjectStatus']" [options]="subjectStatuses" [text]="fields.subjectStatus"/>
+            </div>
+        </nz-tab>
+        <nz-tab nzTitle="Visits">
+            <app-def-result status="404"/>
+        </nz-tab>
+    </nz-tabset>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [statusControl]="form.controls['status']" [isAdd]="isAdd" [remarksControl]="form.controls['remarks']" [isTouched]="form.touched" [isLoading]="isLoading" (submit)="submit($event)" [id]="form.value.id"/>
+</form>

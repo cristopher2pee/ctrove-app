@@ -1,0 +1,8 @@
+:host() {
+    width: inherit !important;
+    height: inherit;
+}
+
+button {
+    font-weight: 500;
+}

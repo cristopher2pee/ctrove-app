@@ -1,0 +1,8 @@
+<div nz-row [nzGutter]="[8, 4]">
+    <app-def-text nz-col nzFlex="auto" class="name" fontType="medium" (click)="onButtonClick.emit()">
+        {{ text }}
+        <app-def-text *ngIf="isRequired()" [h]="6" type="danger">*</app-def-text>
+    </app-def-text>
+    <app-def-button *ngIf="hasButton" nz-col nzFlex="22px" shape="circle" size="small" [icon]="buttonIcon" (click)="onButtonClick.emit()"/>
+    <app-def-select nz-col [nzSpan]="24" [options]="options" [control]="control" [isDisabled]="isDisabled" (selectionChanged)="selectionChanged.emit($event)" (onSearched)="onSearched.emit($event)" (onFocused)="onFocused.emit($event)"/>
+</div>

@@ -1,0 +1,13 @@
+<div nz-row [nzGutter]="[0,4]">
+    <app-def-text nz-col [nzSpan]="12" class="name" fontType="medium">
+        {{ text }}
+        <app-def-text *ngIf="isRequired()" [h]="6" type="danger">*</app-def-text>
+    </app-def-text>
+    <app-def-text *ngIf="control && control.invalid && (control.dirty || control.touched)" nz-col [nzSpan]="12" [h]="6" class="error" type="danger">
+        {{
+            !control.hasError('required') ? getErrorMessage(1) : 
+            getErrorMessage(0)
+        }}
+    </app-def-text>
+    <app-def-textarea nz-col [nzSpan]="24" [control]="control" [isDisabled]="isDisabled" [min]="min" [max]="max" [mask]="mask" [type]="type" (blur)="blur.emit($event)"/>
+</div>

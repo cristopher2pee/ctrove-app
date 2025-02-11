@@ -1,0 +1,5 @@
+<nz-input-number-group 
+    [nzAddOnBefore]="prefix" 
+    [nzAddOnAfter]="suffix">
+    <nz-input-number [ngModel]="control.value" [nzStep]="1" [nzMin]="0" [nzMax]="999" (ngModelChange)="control.setValue($event)"/>
+</nz-input-number-group>

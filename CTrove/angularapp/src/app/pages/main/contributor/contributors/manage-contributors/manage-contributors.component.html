@@ -1,0 +1,21 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-select-field nz-col [nzSpan]="3" [control]="form.controls.prefix" [options]="prefixes" [text]="fields.prefix" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-input-field nz-col [nzSpan]="9" [text]="fields.firstName" [control]="form.controls.firstname" (blur)="onBlur(1)"/>
+    <app-custom-input-field nz-col [nzSpan]="9" [text]="fields.lastName" [control]="form.controls.lastname" (blur)="onBlur(1)"/>
+    <app-custom-select-field nz-col [nzSpan]="3" [control]="form.controls.grade" [options]="gradeTypes" [text]="fields.grade" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.email" [control]="form.controls.email" type="email" (blur)="onBlur(2)"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.mobileNo" [control]="form.controls.mobile"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.landLine" [control]="form.controls.phone"/>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.countryId" [options]="countries" [text]="fields.country" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.city" [control]="form.controls.city"/>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.organizationId" [options]="organizations" [text]="fields.organization" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.primaryJob" [control]="form.controls.primaryJobTitle"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.secondaryJob" [control]="form.controls.secondaryJobTitle"/>
+    <app-def-checkbox nz-col [nzSpan]="24" [control]="form.controls.publicData">{{ fields.publicData }}</app-def-checkbox>
+    <app-def-checkbox nz-col [nzSpan]="24" [control]="form.controls.consent">{{ fields.consent }}</app-def-checkbox>
+    <app-custom-date-picker *ngIf="form.value.consent" nz-col [nzSpan]="12" [text]="fields.dateOfConsent" [control]="form.controls.dateOfConsent" mode="month"/>
+    <app-def-table *ngIf="!isAdd" class="def-margin-top" nz-col [nzSpan]="24" tableSize="small" [headerText]="fields.studies" [size]="meta.limit" [index]="meta.page" [frontPagination]="true" [dataSet]="data.contributorStudy" [isBordered]="true" [headers]="headers" [isLoading]="isSideLoading"/>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [isTouched]="form.touched" [isAdd]="isAdd" [statusControl]="form.controls['status']" [remarksControl]="form.controls['remarks']" [isLoading]="isLoading" (submit)="onSubmit($event)" [id]="form.value.id"/>
+</form>

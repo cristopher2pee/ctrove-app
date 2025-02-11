@@ -1,0 +1,41 @@
+<nz-empty *ngIf="!isLoading && (!audits || audits.length === 0)"/>
+<app-def-skeleton *ngIf="isLoading" [setCount]="3"/>
+<nz-timeline *ngIf="!isLoading && audits">
+    <nz-timeline-item *ngFor="let audit of audits" 
+        [nzDot]="audit.auditType === 1 ? viewTemplate : audit.auditType === 2 ? newTemplate : audit.auditType === 3 ? updateTemplate : audit.auditType === 4 ? removeTemplate : updateTemplate">
+        <p>
+            <nz-tag [nzColor]="audit.auditType === 1 ? 'blue' 
+                : audit.auditType === 2 ? 'green' 
+                : audit.auditType === 3 ? 'orange' 
+                : audit.auditType === 4 ? 'red' 
+                : 'orange'">
+                <span nz-icon [nzType]="audit.auditType === 1 ? 'eye' 
+                : audit.auditType === 2 ? 'plus-circle' 
+                : audit.auditType === 3 ? 'edit' 
+                : audit.auditType === 4 ? 'delete' 
+                : 'edit'"></span>
+                <span>{{ auditTypeTexts[audit.auditType > 0 && audit.auditType <= 4 ? audit.auditType : 0] }}</span>
+            </nz-tag>
+            <app-def-text fontType="bold">{{ audit.datePeformed | date: 'medium' }}</app-def-text>
+        </p>
+        <p>
+            <app-def-text fontType="medium">{{ commonService.formatName(audit.userResponse) }}</app-def-text>
+        </p>
+        <p *ngIf="audit.remarks">
+            <app-def-text [h]="5">{{ audit.remarks }}</app-def-text>
+        </p>
+    </nz-timeline-item>
+</nz-timeline>
+
+<ng-template #newTemplate>
+    <span class="dot" [style.border-color]="'green'"></span>
+</ng-template>
+<ng-template #viewTemplate>
+    <span class="dot" [style.border-color]="'blue'"></span>
+</ng-template>
+<ng-template #removeTemplate>
+    <span class="dot" [style.border-color]="'red'"></span>
+</ng-template>
+<ng-template #updateTemplate>
+    <span class="dot"></span>
+</ng-template>

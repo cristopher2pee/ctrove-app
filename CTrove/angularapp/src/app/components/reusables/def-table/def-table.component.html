@@ -1,0 +1,32 @@
+<div nz-row>
+  <div nz-col class="header" [nzSpan]="24">
+    <app-def-text [h]="4">{{ headerText }}</app-def-text>
+    <app-def-button *ngIf="hasButton" icon="plus" shape="circle" (click)="buttonClicked.emit($event)"/>
+  </div>
+  <nz-table #table nz-col 
+    [nzPageSizeOptions]="sizeOptions"
+    [nzFrontPagination]="frontPagination"
+    [nzSpan]="24"
+    [nzData]="dataSet"
+    [nzLoading]="isLoading"
+    [nzTotal]="total"
+    [nzSize]="tableSize"
+    [nzBordered]="isBordered"
+    [nzPageSize]="size"
+    [nzPageIndex]="index"
+    [nzShowSizeChanger]="isShowingSizeChanger"
+    (nzQueryParams)="changed.emit($event)">
+      <thead>
+        <tr *ngIf="headers">
+          <th *ngFor="let header of headers">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="headers && headers.length > 0">
+          <tr *ngFor="let data of table.data" (click)="dataClicked.emit(data)">
+            <td *ngFor="let item of [].constructor(headers.length); let i = index">{{ getValue(data, i + 1) }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+  </nz-table>
+</div>

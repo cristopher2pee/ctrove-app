@@ -1,0 +1,11 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-input-field nz-col [nzSpan]="24" [control]="form.controls['code']" [text]="fields.code"/>
+    <app-custom-input-field nz-col [nzSpan]="24" [control]="form.controls['name']" [text]="fields.name"/>
+    <app-custom-modal-footer nz-col [nzSpan]="24" 
+        [statusControl]="form.controls['status']" 
+        [isAdd]="isAdd" 
+        [remarksControl]="form.controls['remarks']" 
+        [id]="form.value.id"
+        [isTouched]="form.touched" [isLoading]="isLoading" 
+        (submit)="submit($event)"/>
+</form>

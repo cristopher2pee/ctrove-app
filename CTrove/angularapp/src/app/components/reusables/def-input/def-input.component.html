@@ -1,0 +1,15 @@
+<input nz-input
+    [type]="type"
+    [formControl]="control"
+    [value]="text" 
+    [placeholder]="placeholder ? !control.hasError('required') ?  placeholder :  placeholder + '*' : ''"
+    [readonly]="isDisabled"
+    [nzSize]="size"
+    [nzStatus]="control && isRequired() && control.invalid && (control.dirty || control.touched) ? 'error' : ''"
+    [style.color]="isDisabled || control && !control.value? 'silver' : ''"
+    [maxlength]="max"
+    [minlength]="min"
+    [mask]="mask"
+    [showMaskTyped]="mask ? true : false"
+    [placeHolderCharacter]="mask ? '-' : ''"
+    (blur)="blur.emit(control.value)">

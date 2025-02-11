@@ -1,0 +1,16 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-input-field nz-col [nzSpan]="3" [text]="fields.prefix.name" [control]="form.controls['prefix']" [max]="fields.prefix.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.firstName.name" [control]="form.controls['firstname']" [max]="fields.firstName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.middleName.name" [control]="form.controls['middlename']" [max]="fields.middleName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.lastName.name" [control]="form.controls['lastname']" [max]="fields.lastName.maxLength"/>
+    <app-custom-input-field nz-col [nzSpan]="3" [text]="fields.suffix.name" [control]="form.controls['suffix']" [max]="fields.suffix.maxLength"/>
+    <app-custom-input-field nz-col type="email" [nzSpan]="12" [text]="fields.email" [control]="form.controls['email']" (blur)="onBlur(1, $event)"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.mobileNumber.name" [control]="form.controls['mobile']" [mask]="fields.mobileNumber.mask"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.landline.name" [control]="form.controls['landline']" [mask]="fields.landline.mask"/>
+    <app-def-divider nz-col [nzSpan]="24"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.organization.name" [control]="form.controls['organization']" [max]="fields.organization.maxLength"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [text]="fields.roles" [options]="rolesOption" [control]="form.controls['rolesId']" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-date-range-picker-field nz-col [nzSpan]="12" [text]="fields.dates" [control]="form.controls['date']"/>
+    <app-def-table *ngIf="!isAdd" class="def-margin-top" nz-col [nzSpan]="24" tableSize="small" headerText="Access" [size]="meta.limit" [index]="meta.page" [frontPagination]="true" [dataSet]="accessData" [isBordered]="true" [headers]="headers" [hasButton]="true" (buttonClicked)="manage(true)" (dataClicked)="manage(false, $event)" [isLoading]="isSideLoading"/>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [isLoading]="isLoading" [isAdd]="isAdd" [isTouched]="form.touched" [remarksControl]="form.controls['remarks']" [statusControl]="form.controls['status']" (submit)="onSubmit($event)" [id]="form.value.id"/>
+</form>

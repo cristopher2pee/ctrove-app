@@ -1,0 +1,9 @@
+<nz-select nzShowSearch nzAllowClear 
+    [nzPlaceHolder]="placeholder" 
+    [ngModel]="control.value" 
+    [nzAllowClear]="false"
+    (ngModelChange)="onChanged($event)"
+    [disabled]="isDisabled || !control">
+    <nz-option [nzValue]="true" [nzLabel]="commonService.formatStatus(true)"/>
+    <nz-option [nzValue]="false" [nzLabel]="commonService.formatStatus(false)"/>
+</nz-select> 

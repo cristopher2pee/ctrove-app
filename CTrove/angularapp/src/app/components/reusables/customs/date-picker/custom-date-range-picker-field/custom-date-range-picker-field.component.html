@@ -1,0 +1,7 @@
+<div nz-row [nzGutter]="[0,4]">
+    <app-def-text nz-col [nzSpan]="24" fontType="medium">
+        {{ text }}
+        <app-def-text *ngIf="isRequired()" [h]="6" type="danger">*</app-def-text>
+    </app-def-text>
+    <app-def-date-range-picker nz-col [nzSpan]="24" [control]="control"/>
+</div>

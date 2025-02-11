@@ -1,0 +1,8 @@
+app-def-text {
+    color: color;
+    font-weight: 500;
+}
+
+app-def-input {
+    width: inherit;
+}

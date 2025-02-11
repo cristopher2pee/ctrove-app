@@ -1,0 +1,23 @@
+<form nz-row [nzGutter]="defGutter" [formGroup]="form">
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.name" [control]="form.controls.companyName" (blur)="onBlur(1)"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.contactTypeId" [options]="contactTypes" [text]="fields.contactType" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.parent" [options]="parentTypes" [text]="fields.parent" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.vendorTypeId" [options]="vendorTypes" [text]="fields.vendorType" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.email" [control]="form.controls.email" type="email"/>
+    <app-custom-input-field nz-col [nzSpan]="24" [text]="fields.website" [control]="form.controls.website"/>
+    <app-custom-select-field nz-col [nzSpan]="12" [control]="form.controls.countryId" [options]="countries" [text]="fields.country" (selectionChanged)="form.markAsTouched()"/>
+    <app-def-divider nz-col [nzSpan]="24" [text]="fields.address"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.state" [control]="form.controls.state"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.city" [control]="form.controls.city"/>
+    <app-custom-input-field nz-col [nzSpan]="6" [text]="fields.zipCode" [control]="form.controls.zipCode"/>
+    <app-custom-input-field nz-col [nzSpan]="24" [text]="fields.address1" [control]="form.controls.addressLine1"/>
+    <app-custom-input-field nz-col [nzSpan]="24" [text]="fields.address2" [control]="form.controls.addressLine2"/>
+    <app-custom-input-field nz-col [nzSpan]="24" [text]="fields.address3" [control]="form.controls.addressLine3"/>
+    <app-def-divider nz-col [nzSpan]="24" [text]="fields.contact"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.phoneNumber" [control]="form.controls.phoneNumber"/>
+    <app-custom-input-field nz-col [nzSpan]="12" [text]="fields.faxNumber" [control]="form.controls.faxNumber"/>
+    <app-custom-select-field nz-col [nzSpan]="24" [control]="form.controls.primaryContactId" [options]="contributors1" [text]="fields.primaryContact" (onSearched)="onSearch(1, $event)" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-select-field nz-col [nzSpan]="24" [control]="form.controls.secondaryContactId" [options]="contributors2" [text]="fields.secondaryContact" (onSearched)="onSearch(2, $event)" (selectionChanged)="form.markAsTouched()"/>
+    <app-custom-textarea nz-col [nzSpan]="24" [text]="fields.notes" [control]="form.controls.notes"/>
+    <app-custom-modal-footer nz-col [nzSpan]="24" [isTouched]="form.touched" [isAdd]="isAdd" [statusControl]="form.controls['status']" [remarksControl]="form.controls['remarks']" [isLoading]="isLoading" (submit)="onSubmit($event)" [id]="form.value.id"/>
+</form>
