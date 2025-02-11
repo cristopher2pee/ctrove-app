@@ -1,2 +1,0 @@
-C:\Users\Gemango\source\repos\CTrove\angularapp\obj\Debug\angularapp.esproj.SuggestedBindingRedirects.cache
-C:\Users\Gemango\source\repos\CTrove\angularapp\obj\Debug\angularapp.esproj.CoreCompileInputs.cache
